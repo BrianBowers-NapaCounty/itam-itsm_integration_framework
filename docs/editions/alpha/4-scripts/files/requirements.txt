@@ -1,0 +1,5 @@
+# ArcGIS Pro environments normally already provide many of these.
+arcgis>=2.1
+requests>=2.31
+pandas>=2.0
+matplotlib>=3.7

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "A001",
+    "asset_tag": "PRN-0042",
+    "serial_number": "SN-P42",
+    "name": "Finance Shared Printer",
+    "status": "In Service",
+    "assigned_to": "",
+    "location_id": "FIN-2-201",
+    "model": "Laser Printer",
+    "department": "Finance",
+    "updated_at": "2026-09-13T13:00:00+00:00"
+  },
+  {
+    "id": "A002",
+    "asset_tag": "PC-1180",
+    "serial_number": "SN-PC1180",
+    "name": "Analyst Workstation",
+    "status": "In Service",
+    "assigned_to": "Jordan",
+    "location_id": "ADM-1-114",
+    "model": "Desktop",
+    "department": "Administration",
+    "updated_at": "2026-09-11T13:00:00+00:00"
+  },
+  {
+    "id": "A003",
+    "asset_tag": "AV-0088",
+    "serial_number": "SN-AV88",
+    "name": "Conference Display",
+    "status": "In Service",
+    "assigned_to": "",
+    "location_id": "LIB-1-CONF-A",
+    "model": "Display",
+    "department": "Library",
+    "updated_at": "2026-09-09T13:00:00+00:00"
+  },
+  {
+    "id": "A004",
+    "asset_tag": "LT-2331",
+    "serial_number": "SN-LT2331",
+    "name": "Assigned Laptop",
+    "status": "Missing",
+    "assigned_to": "Casey",
+    "location_id": "",
+    "model": "Laptop",
+    "department": "Public Works",
+    "updated_at": "2026-09-12T13:00:00+00:00"
+  },
+  {
+    "id": "A005",
+    "asset_tag": "LT-2400",
+    "serial_number": "SN-LT2400",
+    "name": "Spare Laptop",
+    "status": "Spare",
+    "assigned_to": "",
+    "location_id": "ADM-STOCK-01",
+    "model": "Laptop",
+    "department": "ITS",
+    "updated_at": "2026-09-13T13:00:00+00:00"
+  }
+]

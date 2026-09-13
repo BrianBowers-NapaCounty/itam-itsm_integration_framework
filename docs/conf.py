@@ -1,0 +1,27 @@
+from pathlib import Path
+project = "Capybara Framework"
+author = "Team Capybara"
+copyright = "2026, Team Capybara"
+version = "0.2"
+release = "0.2.0-rc1"
+extensions = ["myst_parser", "sphinx.ext.autosectionlabel"]
+autosectionlabel_prefix_document = True
+source_suffix = {".rst":"restructuredtext", ".md":"markdown"}
+root_doc = "index"
+myst_enable_extensions = ["colon_fence", "deflist", "fieldlist", "tasklist", "attrs_block", "attrs_inline"]
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
+html_theme = "sphinx_rtd_theme"
+html_static_path = ["_static"]
+html_css_files = ["capybara.css"]
+html_logo = "_static/capybara-logo.png"
+html_favicon = "_static/favicon.png"
+html_show_sourcelink = True
+html_copy_source = True
+html_title = "Capybara Framework"
+html_theme_options = {"logo_only": False, "navigation_depth": 4, "collapse_navigation": False}
+epub_title = project
+epub_author = author
+epub_show_urls = "footnote"
+latex_engine = "xelatex"
+latex_documents = [("index", "capybara-framework.tex", "Capybara Framework", author, "manual")]
+latex_elements = {"papersize":"letterpaper", "pointsize":"10pt"}

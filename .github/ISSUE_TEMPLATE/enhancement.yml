@@ -1,0 +1,10 @@
+name: Enhancement
+description: Suggest a framework, documentation, script, connector, or analytics enhancement
+body:
+  - type: textarea
+    id: usecase
+    attributes: {label: Use case, description: Describe the operational problem and intended users.}
+    validations: {required: true}
+  - type: textarea
+    id: ownership
+    attributes: {label: Data ownership and systems, description: Which system remains authoritative for each affected field?}

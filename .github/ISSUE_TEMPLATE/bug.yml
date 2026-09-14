@@ -1,0 +1,10 @@
+name: Bug report
+description: Report a reproducible documentation or reference-code defect
+body:
+  - type: textarea
+    id: problem
+    attributes: {label: Problem, description: What happened and what did you expect?}
+    validations: {required: true}
+  - type: textarea
+    id: repro
+    attributes: {label: Reproduction, description: Include safe/sample configuration only. Never paste secrets.}

@@ -1,0 +1,61 @@
+# Executive Summary
+
+<img class="capybara-right" width="250px" src="/en/latest/_images/F.png" alt="Capybara drinking coffee" style="filter: sepia(25%);">The **Capybara Framework** provides a practical, scalable approach for integrating IT Asset Management (ITAM) and IT Service Management (ITSM) systems with indoor spatial data managed in ArcGIS Indoors. Its primary objective is to bridge the gap between non-spatial IT operational data and the physical environments in which technology assets are deployed, used, and maintained. By introducing spatial context into IT workflows, Capybara enables organizations to better understand their assets, improve operational efficiency, and make more informed decisions.
+
+Organizations increasingly operate in complex indoor environments such as offices, campuses, healthcare facilities, and industrial sites, where the location of assets directly affects service delivery, risk, and cost. Traditional ITSM and ITAM platforms excel at tracking lifecycle, incidents, and relationships, but they often lack meaningful awareness of physical space. At the same time, GIS platforms provide rich spatial intelligence that is frequently disconnected from IT operations. The Capybara Framework addresses this disconnect by aligning spatial models with IT data structures and workflows.
+
+Capybara introduces a unified conceptual model that treats indoor location as a first-class attribute of IT operations. Assets, incidents, service requests, and maintenance activities can be visualized and analyzed within their actual physical context, improving situational awareness and reducing time spent searching for information across disparate systems. This spatially enabled approach supports faster troubleshooting, more accurate impact analysis, and clearer communication among technical, facilities, and operational teams.
+
+The framework is designed to be vendor-agnostic and adaptable. While examples commonly reference ArcGIS Indoors in combination with popular ITSM platforms, Capybara focuses on integration patterns, data conventions, and architectural principles rather than prescribing specific products. This allows organizations to adopt the framework incrementally and integrate it with existing systems and processes, minimizing disruption while delivering measurable value.
+
+Capybara emphasizes real-world implementation and operational sustainability. The documentation guides readers through planning, configuration, integration, utilization, and maintenance phases, reflecting the lifecycle of an actual deployment. Supporting materials such as scripts, reference guides, visual resources, and document templates help teams automate repetitive tasks, standardize processes, and communicate effectively with stakeholders.
+
+Collaboration across disciplines is a core benefit of the framework. By providing a shared vocabulary and structure, Capybara helps align the efforts of GIS professionals, IT administrators, facilities managers, and operations staff. This alignment reduces silos, improves data quality, and ensures that spatial and IT systems evolve together rather than independently.
+
+Ultimately, the Capybara Framework enables organizations to move beyond static records and disconnected systems toward a more integrated, location-aware model of IT operations. By embedding spatial intelligence into ITAM and ITSM workflows, Capybara supports improved visibility, better decision-making, and more resilient management of technology assets within indoor environments.
+
+<div class="rc3-extension">
+
+## Extended guidance for the Original Edition
+
+```{image} /_images/symbol-information.png
+:alt: 0-3-executive-summary
+:width: 64px
+:class: page-symbol
+```
+
+<div>
+
+### Executive Summary
+
+<div class="grid3">
+
+<div class="card">
+
+#### Operational win
+
+Tickets can carry floor-aware context, asset links, unit IDs, map links, route links, and confidence scores.
+
+</div>
+
+<div class="card">
+
+#### Governance win
+
+Authoritative ownership is explicit: ServiceNow owns work state; ArcGIS owns indoor spatial truth; Python owns integration state.
+
+</div>
+
+<div class="card">
+
+#### Reporting win
+
+Managers and leadership can see service demand by building, floor, department, asset type, hotspot, and SLA risk.
+
+</div>
+
+</div>
+
+</div>
+
+</div>

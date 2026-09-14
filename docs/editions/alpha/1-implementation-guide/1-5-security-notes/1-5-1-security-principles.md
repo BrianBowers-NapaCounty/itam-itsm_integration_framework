@@ -1,0 +1,38 @@
+# Security Principles
+
+<img class="capybara-left" width="250px" src="/en/latest/_images/AE.png" alt="Capybara security guard with arms crossed looking tough" style="filter: sepia(25%); shape-outside: ellipse(100% 100% at 50% 50%) !important;">Security is a foundational concern in any **Capybara ITAM/ITSM and ArcGIS Indoors integration**, because the framework brings together asset data, service workflows, and spatial context into a shared operational view. This convergence increases the value of the data, but also raises the importance of protecting it. A secure Capybara implementation helps ensure that information is accurate, trusted, and available only to those with a legitimate need to use it.
+
+**Data integrity** is a core principle. Asset locations, attributes, and status information must remain consistent as data moves between ITAM, ITSM, and indoor GIS systems. Maintaining integrity means preventing unauthorized changes, minimizing duplication, and ensuring updates are traceable. When users can rely on the correctness of spatially enabled asset data, Capybara can effectively support analytics, reporting, and operational decision making.
+
+**Access control** is equally important. Not every user requires the same level of visibility or editing capability, especially when spatial data can reveal sensitive facility details. Capybara implementations should align with organizational role-based access models, ensuring that users only see and modify what their responsibilities require. This approach reduces risk while still enabling collaboration across technical and operational teams.
+
+**Data security** extends beyond user permissions to how information is stored, transmitted, and integrated. Asset and service data may include sensitive operational or infrastructure details, making it important to follow established security practices for system integration. Protecting data in transit and at rest helps prevent unauthorized disclosure while supporting reliable system-to-system communication.
+
+Finally, **governance and accountability** provide the framework that ties these principles together. Clear ownership of data, defined security responsibilities, and alignment with organizational policies help Capybara deployments remain secure over time. By treating security as an ongoing practice rather than a one-time task, organizations can confidently expand their Capybara implementations while safeguarding both their data and their facilities.
+
+<div class="rc3-extension">
+
+## Extended guidance for the Original Edition
+
+```{image} /_images/symbol-exclamation2.png
+:alt: 1-5-1-security-principles
+:width: 64px
+:class: page-symbol
+```
+
+<div>
+
+### Security Principles
+
+- Prefer outbound ServiceNow-to-middleware communication over opening database access.
+- Validate every incoming webhook using token, signature, timestamp, replay detection, and source restrictions.
+- Run the Python bridge as a dedicated service identity with narrowly scoped permissions.
+- Use HTTPS/TLS for every network hop.
+- Store secrets outside source code in an approved vault or OS-protected secret store.
+- Log correlation IDs, event IDs, source table, source sys_id, processing status, API response codes, and affected layer IDs.
+- Redact secrets and sensitive personal data from logs.
+- Separate dev, test, and production environments.
+
+</div>
+
+</div>

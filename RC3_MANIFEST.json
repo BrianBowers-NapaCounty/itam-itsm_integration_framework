@@ -1,0 +1,29 @@
+{
+  "release": "1.0.0-rc3-integrated",
+  "github": "https://github.com/BrianBowers-NapaCounty/itam-itsm_integration_framework",
+  "rtd": "https://capybara-framework.readthedocs.io/",
+  "architecture": "single integrated Original Edition on stable Alpha-era routes",
+  "legacy_baseline": {
+    "source_files": 59,
+    "images": 170,
+    "downloads": 178,
+    "static_files_in_mirror": 32,
+    "html_routes": 61,
+    "graphics_gallery_assets": 59,
+    "icon_symbol_product_logo_assets": 78,
+    "branding_assets": 26
+  },
+  "syntax_errors": [],
+  "controls": [
+    "exact live Alpha source/assets recovered before push",
+    "Alpha capybara.css is primary stylesheet",
+    "59 legacy source pages audited page-by-page",
+    "170 legacy images protected",
+    "178 legacy downloads protected",
+    "post-build Selenium visual behavior audit"
+  ],
+  "known_reconciliation_items": [
+    "Published Alpha contributing page says MIT; repository LICENSE.md says PDDL 1.0. RC3 preserves both and flags the discrepancy."
+  ],
+  "payload_files": 666
+}

@@ -1,0 +1,19 @@
+/*
+ * Placeholder compatibility layer.
+ * tools/preserve_live_site.py replaces this with the exact surviving
+ * Alpha Edition _static/capybara.css before deployment.
+ */
+.callout { overflow:auto; }
+.callout-icon { float:left; width:64px; height:auto; margin:0 .85rem .45rem 0; }
+.float-right, .image-right, .capybara-float-right, .capybara-float-art.float-right {
+  float:right; max-width:36%; height:auto; margin:.15rem 0 1rem 1.25rem;
+}
+.float-left, .image-left, .capybara-float-left, .capybara-float-art.float-left {
+  float:left; max-width:36%; height:auto; margin:.15rem 1.25rem 1rem 0;
+}
+.rst-content img[style*="float: right"], .rst-content img[style*="float:right"] {
+  margin:.15rem 0 1rem 1.25rem;
+}
+.rst-content img[style*="float: left"], .rst-content img[style*="float:left"] {
+  margin:.15rem 1.25rem 1rem 0;
+}

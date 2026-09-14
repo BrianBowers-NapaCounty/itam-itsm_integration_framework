@@ -1,0 +1,41 @@
+[
+  {
+    "event_utc": "2026-09-01T16:00:00+00:00",
+    "event_type": "status_change",
+    "record_type": "ticket",
+    "record_id": "T002",
+    "public_id": "REQ0002044",
+    "field_name": "status",
+    "old_value": "In Progress",
+    "new_value": "On Hold",
+    "location_id": "ADM-1-114",
+    "asset_id": "A002",
+    "correlation": "demo-001"
+  },
+  {
+    "event_utc": "2026-09-02T16:00:00+00:00",
+    "event_type": "hold_reason_change",
+    "record_type": "ticket",
+    "record_id": "T004",
+    "public_id": "INC0001020",
+    "field_name": "hold_reason",
+    "old_value": "",
+    "new_value": "Waiting for equipment procurement",
+    "location_id": "NEW-2-220",
+    "asset_id": "",
+    "correlation": "demo-002"
+  },
+  {
+    "event_utc": "2026-09-12T13:00:00+00:00",
+    "event_type": "asset_status_change",
+    "record_type": "asset",
+    "record_id": "A004",
+    "public_id": "LT-2331",
+    "field_name": "status",
+    "old_value": "In Service",
+    "new_value": "Missing",
+    "location_id": "",
+    "asset_id": "A004",
+    "correlation": "demo-003"
+  }
+]

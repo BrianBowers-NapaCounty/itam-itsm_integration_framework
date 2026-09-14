@@ -1,0 +1,11 @@
+{
+  "status": "FAIL",
+  "errors": [
+    "editions/alpha/index.md: missing HTML/CSS classes: ['capybara-right']",
+    "editions/alpha/index.md: missing inline styles: ['filter: sepia(25%);']"
+  ],
+  "warnings": [],
+  "legacy_pages_checked": 59,
+  "legacy_images_expected": 170,
+  "legacy_downloads_expected": 178
+}

@@ -1,0 +1,76 @@
+category,file,type,purpose,status
+01_setup_configuration,01_setup_configuration/validate_environment.py,PY,"Validate configuration, connector reachability, and optional ArcGIS connectivity.",ARC-GIS-CONFIGURED
+01_setup_configuration,01_setup_configuration/discover_itsm_schema.py,PY,Display canonical fields plus a small sample of raw vendor records.,DEMO-RUNNABLE
+01_setup_configuration,01_setup_configuration/discover_arcgis_schema.py,PY,"Inventory fields/capabilities for configured ArcGIS operational, asset, and unit layers.",ARC-GIS-CONFIGURED
+01_setup_configuration,01_setup_configuration/build_location_crosswalk.py,PY,Create a starter ITSM-location-to-Indoors-unit crosswalk for review.,ARC-GIS-CONFIGURED
+02_sync_automation,02_sync_automation/incremental_ticket_sync.py,PY,Pull recently updated ITSM tickets and upsert an ArcGIS operational layer.,ARC-GIS-CONFIGURED
+02_sync_automation,02_sync_automation/sync_assets_to_operational_layer.py,PY,Demonstrate asset-to-ArcGIS attribute synchronization with safe dry-run behavior.,ARC-GIS-CONFIGURED
+02_sync_automation,02_sync_automation/scheduled_pull.py,PY,A minimal polling-loop example suitable for Task Scheduler wrapper usage.  Production deployments should normally let an external scheduler invoke a single iteration rather than keeping an endless notebook/kernel process alive.,DEMO-RUNNABLE
+02_sync_automation,02_sync_automation/writeback_map_context.py,PY,Demonstrate writing a map/place reference back to the ITSM ticket.,DEMO-RUNNABLE
+03_testing_maintenance,03_testing_maintenance/connector_smoke_test.py,PY,Exercise connector health/read paths without performing writes.,DEMO-RUNNABLE
+03_testing_maintenance,03_testing_maintenance/reconcile_operational_layer.py,PY,Compare ITSM tickets with the ArcGIS operational layer and export drift.,ARC-GIS-CONFIGURED
+03_testing_maintenance,03_testing_maintenance/find_orphaned_records.py,PY,Find ArcGIS operational records whose source ITSM ID is absent from the extract.,ARC-GIS-CONFIGURED
+03_testing_maintenance,03_testing_maintenance/repair_safe_drift.py,PY,Illustrate conservative auto-repair: only issues explicitly marked safe are eligible.,DEMO-RUNNABLE
+03_testing_maintenance,03_testing_maintenance/replay_failed_records.py,PY,"Skeleton for replaying a reviewed dead-letter/error export.  A production queue should keep event IDs, attempts, timestamps, error classes, source record IDs, and payload hashes. This demo only documents the replay seam.",PSEUDOCODE-HEAVY
+04_monitoring,04_monitoring/health_check.py,PY,Run connector and ArcGIS health checks and save machine-readable status.,ARC-GIS-CONFIGURED
+04_monitoring,04_monitoring/sync_lag_monitor.py,PY,Measure age of the newest visible ITSM update as a simple polling/sync-lag signal.,DEMO-RUNNABLE
+04_monitoring,04_monitoring/unmatched_location_monitor.py,PY,Measure weak/missing location references against a known-location text file.,DEMO-RUNNABLE
+04_monitoring,04_monitoring/api_error_rate_monitor.py,PY,Template for turning structured integration logs into an API failure-rate metric.,PSEUDOCODE-HEAVY
+04_monitoring,04_monitoring/queue_depth_monitor.py,PY,Template queue/dead-letter monitoring routine.,PSEUDOCODE-HEAVY
+05_notifications_alerts,05_notifications_alerts/alert_missing_assets.py,PY,"Email/preview an alert when assets are flagged missing, lost, or stolen.",DEMO-RUNNABLE
+05_notifications_alerts,05_notifications_alerts/alert_stale_unassigned_tickets.py,PY,Escalate active tickets that remain unassigned beyond a configured interval.,DEMO-RUNNABLE
+05_notifications_alerts,05_notifications_alerts/alert_parts_on_order.py,PY,Alert managers about tickets held for parts/equipment/procurement longer than threshold.,DEMO-RUNNABLE
+05_notifications_alerts,05_notifications_alerts/alert_failed_sync.py,PY,Template for notifying maintainers when a reconciliation/export contains high-severity drift.,PSEUDOCODE-HEAVY
+05_notifications_alerts,05_notifications_alerts/manager_daily_digest.py,PY,Build one management digest instead of sending one message per exception.,DEMO-RUNNABLE
+06_reporting,06_reporting/report_on_hold_parts.py,PY,Produce CSV + HTML reports for tickets waiting on parts/equipment/procurement.,DEMO-RUNNABLE
+06_reporting,06_reporting/report_assignment_backlog.py,PY,Summarize active ticket backlog by assignment group.,DEMO-RUNNABLE
+06_reporting,06_reporting/report_missing_assets.py,PY,Create a management-friendly missing/lost/stolen asset inventory.,DEMO-RUNNABLE
+06_reporting,06_reporting/report_location_match_quality.py,PY,Measure ticket-location completeness against an approved location identifier list.,DEMO-RUNNABLE
+06_reporting,06_reporting/report_service_hotspots.py,PY,Rank locations by service-ticket volume; useful precursor to spatial hotspot mapping.,DEMO-RUNNABLE
+06_reporting,06_reporting/report_asset_service_history.py,PY,Rank assets by associated ticket history.,DEMO-RUNNABLE
+06_reporting,06_reporting/report_executive_summary.py,PY,Generate a compact executive KPI table from canonical ticket and asset data.,DEMO-RUNNABLE
+07_ad_hoc_tools,07_ad_hoc_tools/lookup_asset.py,PY,Look up an asset by ID/tag and show the canonical normalized record.,DEMO-RUNNABLE
+07_ad_hoc_tools,07_ad_hoc_tools/trace_ticket.py,PY,Inspect one ticket's canonical and raw vendor representation for troubleshooting.,DEMO-RUNNABLE
+07_ad_hoc_tools,07_ad_hoc_tools/export_building_work_queue.py,PY,Export active work for one location/building identifier.,DEMO-RUNNABLE
+07_ad_hoc_tools,07_ad_hoc_tools/find_nearby_spares.py,PY,ArcGIS-powered example: query spare-equipment points near a supplied geometry.  This demonstrates a cool spatial use case without prescribing a particular Indoors asset schema. Configure your asset layer's status/model fields locally.,ARC-GIS-CONFIGURED
+07_ad_hoc_tools,07_ad_hoc_tools/compare_ticket_to_arcgis.py,PY,Side-by-side troubleshooting view of one ITSM ticket and matching ArcGIS feature.,ARC-GIS-CONFIGURED
+01_setup_configuration,01_setup_configuration/configuration_workbench.ipynb,IPYNB,Interactive workbench / demonstration notebook,DEMO-RUNNABLE
+02_sync_automation,02_sync_automation/sync_walkthrough.ipynb,IPYNB,Interactive workbench / demonstration notebook,DEMO-RUNNABLE
+03_testing_maintenance,03_testing_maintenance/maintenance_workbench.ipynb,IPYNB,Interactive workbench / demonstration notebook,DEMO-RUNNABLE
+04_monitoring,04_monitoring/monitoring_dashboard.ipynb,IPYNB,Interactive workbench / demonstration notebook,DEMO-RUNNABLE
+05_notifications_alerts,05_notifications_alerts/alert_preview.ipynb,IPYNB,Interactive workbench / demonstration notebook,DEMO-RUNNABLE
+06_reporting,06_reporting/reporting_workbench.ipynb,IPYNB,Interactive workbench / demonstration notebook,DEMO-RUNNABLE
+07_ad_hoc_tools,07_ad_hoc_tools/spatial_service_explorer.ipynb,IPYNB,Interactive workbench / demonstration notebook,DEMO-RUNNABLE
+08_connector_lab,08_connector_lab/connector_normalization_lab.ipynb,IPYNB,Interactive workbench / demonstration notebook,DEMO-RUNNABLE
+09_historical_analytics,09_historical_analytics/bootstrap_analytics_service.py,PY,"Create/verify the Capybara hosted analytics tables.  If analytics.item_id is blank, this script attempts to create an empty hosted feature service using the current GIS account, then adds the standard tables. Creating hosted services requires appropriate privileges.",ARC-GIS-CONFIGURED
+09_historical_analytics,09_historical_analytics/capture_daily_snapshot.py,PY,Capture current canonical ITSM/ITAM state into historical analytics tables.,DEMO-RUNNABLE
+09_historical_analytics,09_historical_analytics/backfill_metric_snapshots.py,PY,Backfill chart-ready historical metric rows from externally supplied period extracts.  A production backfill normally needs historical ITSM exports because current tickets cannot reconstruct prior point-in-time backlog accurately. This script therefore demonstrates the storage contract and refuses to fabricate history.,PSEUDOCODE-HEAVY
+09_historical_analytics,09_historical_analytics/publish_event_history.py,PY,"Publish normalized ITSM change events from an event JSON file.  Expected JSON fields: event_utc,event_type,record_type,record_id,public_id, field_name,old_value,new_value,location_id,asset_id,correlation.",PSEUDOCODE-HEAVY
+09_historical_analytics,09_historical_analytics/publish_sync_health.py,PY,Sample connector/ArcGIS health and write one Sync_Health history row.,ARC-GIS-CONFIGURED
+09_historical_analytics,09_historical_analytics/publish_reconciliation_history.py,PY,Run source-vs-operational reconciliation and persist issues historically.,ARC-GIS-CONFIGURED
+10_time_series_dashboards,10_time_series_dashboards/list_reporting_windows.py,PY,Print the standard rolling/calendar reporting windows used by Capybara.,DEMO-RUNNABLE
+10_time_series_dashboards,10_time_series_dashboards/export_metric_series.py,PY,Export a hosted/local metric time series for a chosen reporting window.,ARC-GIS-CONFIGURED
+10_time_series_dashboards,10_time_series_dashboards/chart_metric_series.py,PY,Generate a PNG time-series chart from historical Metric_Snapshots.,ARC-GIS-CONFIGURED
+10_time_series_dashboards,10_time_series_dashboards/compare_reporting_periods.py,PY,Demonstrate period-over-period comparisons from stored metric rows.,DEMO-RUNNABLE
+10_time_series_dashboards,10_time_series_dashboards/materialize_period_summaries.py,PY,Materialize standard period rows for dashboard selectors.  This reference implementation records window boundaries; production deployments should query/aggregate Metric_Snapshots for each metric/dimension and fill values.,DEMO-RUNNABLE
+10_time_series_dashboards,10_time_series_dashboards/dashboard_dataset_inventory.py,PY,Print suggested ArcGIS Dashboard/Experience Builder data-source usage.,DEMO-RUNNABLE
+11_governance_reliability,11_governance_reliability/validate_analytics_schema.py,PY,Validate required hosted analytics table names and fields.,ARC-GIS-CONFIGURED
+11_governance_reliability,11_governance_reliability/audit_snapshot_gaps.py,PY,Detect missing daily-capture dates in an exported/local Analytics_Runs history.,PSEUDOCODE-HEAVY
+11_governance_reliability,11_governance_reliability/retention_cleanup.py,PY,Preview retention cutoffs; destructive deletion requires explicit local implementation approval.,ARC-GIS-CONFIGURED
+11_governance_reliability,11_governance_reliability/deduplicate_snapshot_rows.py,PY,Document duplicate-snapshot detection keys without automatically deleting records.,DEMO-RUNNABLE
+11_governance_reliability,11_governance_reliability/publish_data_quality_score.py,PY,Compute and persist a governance/data-quality score snapshot.,DEMO-RUNNABLE
+12_advanced_analytics,12_advanced_analytics/detect_metric_anomalies.py,PY,Run robust MAD-based anomaly detection on one stored metric time series.,ARC-GIS-CONFIGURED
+12_advanced_analytics,12_advanced_analytics/procurement_hold_aging.py,PY,Bucket parts/equipment/procurement holds by age for management review.,DEMO-RUNNABLE
+12_advanced_analytics,12_advanced_analytics/sla_geography.py,PY,Summarize current SLA-risk workload by location for later join to Indoors geometry.,DEMO-RUNNABLE
+12_advanced_analytics,12_advanced_analytics/refresh_wave_planner.py,PY,"Rank locations by replacement/deployment workload to help stage refresh waves.  A real implementation can add device age, warranty, model, security posture, department priority, floor adjacency, and technician capacity.",DEMO-RUNNABLE
+12_advanced_analytics,12_advanced_analytics/asset_custody_anomalies.py,PY,Flag simple asset-custody conditions suitable for audit follow-up.,DEMO-RUNNABLE
+12_advanced_analytics,12_advanced_analytics/technician_workload_balance.py,PY,Compare active assigned workload by technician and assignment group.,DEMO-RUNNABLE
+13_extension_sdk,13_extension_sdk/example_custom_metric.py,PY,Example local metric plug-in registered without editing core analytics code.,DEMO-RUNNABLE
+13_extension_sdk,13_extension_sdk/example_enrichment_hook.py,PY,Example extension hook that adds local context to a normalized payload.,DEMO-RUNNABLE
+09_historical_analytics,09_historical_analytics/analytics_bootstrap.ipynb,IPYNB,Interactive analytics / dashboard / extension workbench,DEMO-RUNNABLE
+10_time_series_dashboards,10_time_series_dashboards/period_comparison_workbench.ipynb,IPYNB,Interactive analytics / dashboard / extension workbench,DEMO-RUNNABLE
+10_time_series_dashboards,10_time_series_dashboards/time_series_workbench.ipynb,IPYNB,Interactive analytics / dashboard / extension workbench,DEMO-RUNNABLE
+11_governance_reliability,11_governance_reliability/data_quality_scorecard.ipynb,IPYNB,Interactive analytics / dashboard / extension workbench,DEMO-RUNNABLE
+12_advanced_analytics,12_advanced_analytics/anomaly_explorer.ipynb,IPYNB,Interactive analytics / dashboard / extension workbench,DEMO-RUNNABLE
+12_advanced_analytics,12_advanced_analytics/executive_trend_pack.ipynb,IPYNB,Interactive analytics / dashboard / extension workbench,DEMO-RUNNABLE
+13_extension_sdk,13_extension_sdk/extension_lab.ipynb,IPYNB,Interactive analytics / dashboard / extension workbench,DEMO-RUNNABLE

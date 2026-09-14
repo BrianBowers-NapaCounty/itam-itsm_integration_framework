@@ -1,0 +1,3 @@
+Risk,Probability,Impact,Owner,Mitigation,Status
+Location crosswalk quality,Medium,High,GIS Owner,Pre-pilot audit and review queue,Open
+API/schema change,Medium,High,Integration Owner,Contract tests and schema monitoring,Open

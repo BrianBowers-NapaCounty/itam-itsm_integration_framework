@@ -1,0 +1,10 @@
+_build/
+build/
+release/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.env
+config.toml

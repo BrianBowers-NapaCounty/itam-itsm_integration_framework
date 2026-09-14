@@ -1,0 +1,8 @@
+/* Original Edition 1.0.0 additions. The recovered Alpha capybara.css remains primary. */
+:root{--capy-sepia-primary:#9F5A2C;--capy-sepia-heading:#77390A;--capy-sepia-light:#DAC4B0;--capy-sepia-accent:#C4A48A;--capy-blue-link:#39BBFF;--capy-blue-button:#277DD1;--capy-blue-tertiary:#0C61B9;--capy-blue-deep:#00356B;}
+.rc3-extension{clear:both;margin:1.6rem 0 1.2rem;padding:1rem 1.15rem;border-left:4px solid var(--capy-sepia-primary);background:rgba(218,196,176,.16)}
+.rc3-extension>:first-child{margin-top:0}.rc3-extension>:last-child{margin-bottom:0}
+.capybara-float-left,.capybara-float-right,.float-left,.float-right{max-width:min(36%,260px);height:auto}
+.capybara-float-left,.float-left{float:left;margin:.15rem 1.15rem .75rem 0}.capybara-float-right,.float-right{float:right;margin:.15rem 0 .75rem 1.15rem}
+@media(max-width:700px){.capybara-float-left,.capybara-float-right,.float-left,.float-right{float:none;display:block;max-width:220px;margin:.75rem auto}}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--capy-blue-button);outline-offset:2px}

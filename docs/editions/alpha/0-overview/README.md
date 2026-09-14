@@ -1,0 +1,7 @@
+<img class="capybara-right" width="250px" src="/en/latest/_images/O.png" alt="Capybara reading the Capybara Framework" style="filter: sepia(25%);">The **Overview** section provides a high-level introduction to the Capybara Framework and establishes the context for the documentation that follows. It is intended to orient readers who are new to the framework, explain its purpose, and outline the scope of the solution without requiring prior familiarity with the underlying technologies or integrations.
+
+Within this section, the Introduction presents the foundational concepts and goals of Capybara, while the Problem Statement clearly articulates the operational and data challenges the framework is designed to address. Together, these subsections describe the real-world gaps in IT asset and service visibility that often exist across spatial and non-spatial systems.
+
+The Executive Summary concludes the Overview by synthesizing the problem and proposed approach into a concise narrative suitable for technical leads, project sponsors, and decision-makers. It highlights the value proposition of Capybara and prepares readers for the more detailed, implementation-focused guidance found in subsequent sections.
+
+See the section index for current documentation.

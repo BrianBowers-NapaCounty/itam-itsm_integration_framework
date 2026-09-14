@@ -1,0 +1,25 @@
+:root { --capy-sepia:#9F5A2C; --capy-blue:#277DD1; --capy-dark:#263D68; --capy-gold:#E4AC23; }
+.wy-side-nav-search { background: var(--capy-dark); }
+.wy-nav-top { background: var(--capy-dark); }
+.rst-content h1,.rst-content h2,.rst-content h3 { color:#26211d; }
+.rst-content table.docutils th { background:#f1e9e1; }
+.page-symbol { float:right; margin:0 0 .7rem 1rem; max-width:72px; }
+.page-logo { float:right; margin:0 0 .7rem 1rem; max-width:180px; }
+.capy-note { border-left:5px solid var(--capy-blue); padding:.7rem 1rem; background:#f4f8fc; }
+
+/* Proposed additions to _static/capybara.css */
+.page-symbol {
+  display: block;
+  width: 64px;
+  height: auto;
+  margin: 0 0 .55rem 0;
+}
+.page-logo {
+  display: block;
+  max-width: 150px;
+  max-height: 64px;
+  width: auto;
+  height: auto;
+  margin: 0 0 .65rem 0;
+}
+/* Do not rely on symbol graphics alone to communicate meaning; page titles and labels remain primary. */

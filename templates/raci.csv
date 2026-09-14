@@ -1,0 +1,4 @@
+Activity,Executive Sponsor,ITSM Owner,GIS Owner,Integration Owner,Security,Service Desk
+Architecture approval,A,C,C,R,C,I
+Field mapping,I,R,R,R,C,C
+Production deployment,A,C,C,R,C,I

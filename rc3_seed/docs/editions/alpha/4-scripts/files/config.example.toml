@@ -1,0 +1,83 @@
+[general]
+connector = "mock"
+dry_run = true
+output_dir = "./output"
+sample_data = "./sample_data"
+
+[arcgis]
+# Prefer a named ArcGIS API for Python profile where possible.
+profile = ""
+portal_url = ""
+username_env = "CAPYBARA_ARCGIS_USERNAME"
+password_env = "CAPYBARA_ARCGIS_PASSWORD"
+operational_item_id = ""
+operational_layer_index = 0
+asset_item_id = ""
+asset_layer_index = 0
+unit_item_id = ""
+unit_layer_index = 0
+
+[servicenow]
+base_url = "https://example.service-now.com"
+auth_mode = "bearer"
+token_env = "CAPYBARA_SERVICENOW_TOKEN"
+username_env = "CAPYBARA_SERVICENOW_USERNAME"
+password_env = "CAPYBARA_SERVICENOW_PASSWORD"
+incident_table = "incident"
+asset_table = "alm_hardware"
+page_size = 500
+
+[teamdynamix]
+base_url = "https://example.teamdynamix.com/TDWebApi"
+app_id = 0
+token_env = "CAPYBARA_TDX_TOKEN"
+
+[cherwell]
+base_url = "https://example.example/CherwellAPI"
+client_id_env = "CAPYBARA_CHERWELL_CLIENT_ID"
+username_env = "CAPYBARA_CHERWELL_USERNAME"
+password_env = "CAPYBARA_CHERWELL_PASSWORD"
+auth_mode = "Internal"
+incident_saved_search = ""
+
+[smtp]
+enabled = false
+host = "smtp.example.gov"
+port = 587
+starttls = true
+username_env = "CAPYBARA_SMTP_USERNAME"
+password_env = "CAPYBARA_SMTP_PASSWORD"
+from_address = "capybara-alerts@example.gov"
+default_recipients = ["it-management@example.gov"]
+
+[thresholds]
+max_sync_lag_minutes = 30
+max_unmatched_location_rate = 0.05
+max_api_failure_rate = 0.05
+stale_unassigned_hours = 8
+parts_hold_days = 5
+missing_asset_alert = true
+
+[analytics]
+# Optional existing hosted Feature Service item. If blank, bootstrap scripts can
+# create an empty hosted feature service when privileges permit.
+item_id = ""
+service_name = "Capybara_Analytics"
+folder = ""
+chunk_size = 200
+time_zone = "America/Los_Angeles"
+retention_days_event_history = 730
+retention_days_sync_health = 365
+retention_days_runs = 1825
+local_sqlite_path = "./output/capybara_analytics.sqlite"
+
+[analytics.tables]
+runs = "Analytics_Runs"
+metrics = "Metric_Snapshots"
+ticket_daily = "Ticket_Daily"
+asset_daily = "Asset_Daily"
+events = "Event_History"
+sync_health = "Sync_Health"
+reconciliation = "Reconciliation_History"
+period_summaries = "Period_Summaries"
+data_quality = "Data_Quality_Snapshots"

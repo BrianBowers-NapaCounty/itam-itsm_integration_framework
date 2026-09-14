@@ -1,0 +1,3 @@
+Canonical Field,ITSM Field,ArcGIS Field,Direction,Authoritative Owner,Notes
+Ticket ID,,,ITSM -> GIS,ITSM,
+Location ID,,,Bi-directional reference,GIS/ITSM crosswalk,

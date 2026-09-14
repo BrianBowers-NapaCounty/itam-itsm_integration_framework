@@ -1,4 +1,4 @@
-This page mirrors the repository's `/CODE_OF_CONDUCT.md`. The documentation copy is materialized during release finalization to avoid recursive include behavior in MyST/Sphinx.
+*This page mirrors the repository's *`/CODE_OF_CONDUCT.md`*. All changes should be made at the root.*
 
 # Code of Conduct
 

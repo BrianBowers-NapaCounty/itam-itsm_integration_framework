@@ -1,7 +1,9 @@
 {
   "status": "PASS",
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    "Recovered contributing page says MIT License while repository LICENSE.md says PDDL 1.0; preserved for deliberate reconciliation."
+  ],
   "legacy_pages_checked": 59,
   "legacy_images_expected": 170,
   "legacy_downloads_expected": 178

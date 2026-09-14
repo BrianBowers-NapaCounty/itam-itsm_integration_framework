@@ -365,31 +365,45 @@ def finalize(repo_root, driver=None):
 
     add_style_notes_links(docs / "style-notes.md")
     # Canonical mirrored repository documents flow ROOT -> docs only.
-    # Never copy docs/contributing.md back over root CONTRIBUTING.md:
-    # the historical docs page may contain a MyST include of the root file,
-    # which would make the root file recursively include itself.
-    for root_name, docs_name in [
-        ("CONTRIBUTING.md", "contributing.md"),
-        ("CHANGELOG.md", "changelog.md"),
-        ("CODE_OF_CONDUCT.md", "code-of-conduct.md"),
-    ]:
+    #
+    # Preserve the exact Alpha-era mirror notices because they are part of
+    # the protected legacy source. Materialize root content directly instead
+    # of using MyST {include}; this prevents recursive parsing.
+    mirror_docs = [
+        (
+            "CONTRIBUTING.md",
+            "contributing.md",
+            "*This page mirrors the repository's "
+            "*`/CONTRIBUTING.md`*. All changes should be made at the root.*",
+        ),
+        (
+            "CHANGELOG.md",
+            "changelog.md",
+            "*This page mirrors the repository's "
+            "*`/CHANGELOG.md`*. All changes should be made at the root.*",
+        ),
+        (
+            "CODE_OF_CONDUCT.md",
+            "code-of-conduct.md",
+            "*This page mirrors the repository's "
+            "*`/CODE_OF_CONDUCT.md`*. All changes should be made at the root.*",
+        ),
+    ]
+
+    for root_name, docs_name, legacy_notice in mirror_docs:
         source = repo / root_name
         destination = docs / docs_name
-        if source.exists():
-            canonical = source.read_text(encoding="utf-8", errors="replace").strip()
-            note = (
-                f"This page mirrors the repository's `/{root_name}`. "
-                "The documentation copy is materialized during release finalization "
-                "to avoid recursive include behavior in MyST/Sphinx.\n\n"
-            )
-            destination.write_text(note + canonical + "\n", encoding="utf-8")
 
-    (repo / "legacy_baseline/LAST_RC3_FINALIZE_REPORT.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
-    if report["errors"]:
-        print(f"\nFINALIZE COMPLETED WITH {len(report['errors'])} ERROR(S)")
-    else:
-        print("\nRC3 finalization completed with zero fetch errors.")
-    return report
+        if source.exists():
+            canonical = source.read_text(
+                encoding="utf-8",
+                errors="replace"
+            ).strip()
+
+            destination.write_text(
+                legacy_notice + "\n\n" + canonical + "\n",
+                encoding="utf-8"
+            )
 
 
 def main():

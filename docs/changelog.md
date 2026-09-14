@@ -1,4 +1,4 @@
-This page mirrors the repository's `/CHANGELOG.md`. The documentation copy is materialized during release finalization to avoid recursive include behavior in MyST/Sphinx.
+*This page mirrors the repository's *`/CHANGELOG.md`*. All changes should be made at the root.*
 
 # Changelog
 

@@ -1,9 +1,6 @@
 # ITAM/ITSM & ArcGIS Indoors Integration
 
-```{include} README.md
-:heading-offset: 1
-```
-
+<!-- RC3: removed stale include for missing non-legacy target: README.md -->
 ```{toctree}
 :maxdepth: 1
 

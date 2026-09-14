@@ -158,4 +158,3 @@ Open an issue or pull request describing the use case, affected platforms, data 
 
 Thank you for helping make Capybara better for everyone.
 
----

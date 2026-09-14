@@ -1,13 +1,9 @@
 # Implementation Guide
 
-```{include} 1-implementation-guide/README.md
-:heading-offset: 1
-```
-
+<!-- RC3: removed stale include for missing non-legacy target: 1-implementation-guide/README.md -->
 ```{toctree}
 :glob:
 :maxdepth: 1
-:caption: 
 :titlesonly:
 1-implementation-guide/1-1-first-steps/index
 1-implementation-guide/1-2-indoors-setup/index

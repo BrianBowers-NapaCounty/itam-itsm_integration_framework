@@ -1,8 +1,7 @@
 Scripts
 =======
 
-.. include:: 4-scripts/README.md
-   :parser: myst_parser.sphinx_
+.. RC3: stale include removed because its target does not exist in the recovered Alpha source: 4-scripts/README.md
 
 .. list-table::
    :widths: 20 80

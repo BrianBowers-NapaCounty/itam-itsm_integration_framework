@@ -17,6 +17,7 @@ lessons gathered during the alpha cycle as the framework matures toward wider or
 :caption: Contents
 :titlesonly:
 *
+```
 
 ---
 

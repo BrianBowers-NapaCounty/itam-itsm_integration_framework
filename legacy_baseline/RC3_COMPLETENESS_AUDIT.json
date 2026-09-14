@@ -1,6 +1,12 @@
 {
-  "status": "PASS",
-  "errors": [],
+  "status": "FAIL",
+  "errors": [
+    "editions/alpha/1-implementation-guide.md: missing legacy headings: [':heading-offset: 1']",
+    "editions/alpha/1-implementation-guide/1-2-indoors-setup/index.md: missing legacy headings: [':heading-offset: 1']",
+    "editions/alpha/1-implementation-guide/1-3-integration/index.md: missing legacy headings: [':heading-offset: 1']",
+    "editions/alpha/1-implementation-guide/1-4-utilization/index.md: missing legacy headings: [':heading-offset: 1']",
+    "editions/alpha/1-implementation-guide/1-5-security-notes/index.md: missing legacy headings: [':heading-offset: 1']"
+  ],
   "warnings": [
     "Recovered contributing page says MIT License while repository LICENSE.md says PDDL 1.0; preserved for deliberate reconciliation."
   ],

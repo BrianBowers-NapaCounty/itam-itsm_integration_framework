@@ -5,6 +5,7 @@
 ```{literalinclude} ../LICENSE
 :language: text
 :lines: 3-21
+```
 
 <div class="rc3-extension">
 

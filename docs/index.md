@@ -16,7 +16,7 @@ editions/alpha/index
 :titlesonly:
 style-notes
 branding
-graphics
+editions/alpha/5-visual-resources/5-4-graphics
 filenaming-conventions
 contributing
 code-of-conduct

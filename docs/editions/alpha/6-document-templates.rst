@@ -1,8 +1,7 @@
 Document Templates
 ==================
 
-.. include:: 6-document-templates/README.md
-   :parser: myst_parser.sphinx_
+.. RC3: stale include removed because its target does not exist in the recovered Alpha source: 6-document-templates/README.md
 
 Project Planning
 ----------------

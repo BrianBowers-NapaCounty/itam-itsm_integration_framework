@@ -3,7 +3,7 @@ AGOL setup instructions.
 
 <div class="rc3-extension">
 
-## Extended guidance for the Original Edition
+## Expanded 1.0.0 Guidance
 
 ```{image} /_images/symbol-information.png
 :alt: 1-2-1-agol

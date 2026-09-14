@@ -2,4 +2,10 @@
 
 Use the appendices as a reference when you need deeper context, formal definitions, or additional detail that supports implementation and operational decisions.
 
+<div class="rc3-extension">
+
+## Expanded 1.0.0 Guidance
+
 See the section index for current documentation.
+
+</div>

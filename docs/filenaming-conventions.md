@@ -116,4 +116,10 @@ MITLicenseAdditionsMemo_v003_20260716_BB.docx
 - Clear version and author tracking
 - Minimal cross-platform issues
 
+<div class="rc3-extension">
+
+## Expanded 1.0.0 Guidance
+
 Use lowercase kebab-case for documentation pages, snake_case for Python modules, and descriptive stable names for public assets. Never author links to Sphinx-generated `_downloads/<hash>/...` paths.
+
+</div>

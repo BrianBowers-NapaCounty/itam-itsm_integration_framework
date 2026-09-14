@@ -20,7 +20,7 @@ Ultimately, Capybara aims to make IT operations more visible, contextual, and ac
 
 <div class="rc3-extension">
 
-## Extended guidance for the Original Edition
+## Expanded 1.0.0 Guidance
 
 ```{image} /_images/symbol-information.png
 :alt: 0-1-introduction

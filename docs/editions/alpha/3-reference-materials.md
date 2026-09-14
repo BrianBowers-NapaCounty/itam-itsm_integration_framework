@@ -9,8 +9,17 @@
 :maxdepth: 3
 :caption: 
 :titlesonly:
-
 3-reference-materials/*
+```
+
+---
+
+## Additional Original Edition Topics
+
+```{toctree}
+:maxdepth: 3
+:caption: Expanded 1.0.0 Documentation
+
 3-reference-materials/3-1-preimplementation-checklist
 3-reference-materials/3-2-quick-start-guide
 3-reference-materials/3-3-integration-cheat-sheet

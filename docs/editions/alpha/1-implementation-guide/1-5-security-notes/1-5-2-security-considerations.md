@@ -62,7 +62,7 @@ Taken together, these practices help ensure that a Capybara integration is not o
 
 <div class="rc3-extension">
 
-## Extended guidance for the Original Edition
+## Expanded 1.0.0 Guidance
 
 ```{image} /_images/symbol-exclamation2.png
 :alt: 1-5-2-security-considerations

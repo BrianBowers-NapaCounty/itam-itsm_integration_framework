@@ -12,7 +12,7 @@ Finally, **governance and accountability** provide the framework that ties these
 
 <div class="rc3-extension">
 
-## Extended guidance for the Original Edition
+## Expanded 1.0.0 Guidance
 
 ```{image} /_images/symbol-exclamation2.png
 :alt: 1-5-1-security-principles

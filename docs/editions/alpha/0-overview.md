@@ -9,8 +9,17 @@
 :maxdepth: 3
 :caption: 
 :titlesonly:
-
 0-overview/*
+```
+
+---
+
+## Additional Original Edition Topics
+
+```{toctree}
+:maxdepth: 3
+:caption: Expanded 1.0.0 Documentation
+
 0-overview/0-1-introduction
 0-overview/0-2-problem-statement
 0-overview/0-3-executive-summary
@@ -20,4 +29,11 @@
 0-overview/0-7-assumptions-boundaries
 ```
 
+
+<div class="rc3-extension">
+
+## Expanded 1.0.0 Guidance
+
 The overview explains the problem Capybara addresses, its business context, guiding principles, and scope.
+
+</div>

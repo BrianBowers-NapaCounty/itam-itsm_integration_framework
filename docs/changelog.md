@@ -5,7 +5,7 @@
 
 <div class="rc3-extension">
 
-## Extended guidance for the Original Edition
+## Expanded 1.0.0 Guidance
 
 ## 1.0.0-rc3 - September 2026
 

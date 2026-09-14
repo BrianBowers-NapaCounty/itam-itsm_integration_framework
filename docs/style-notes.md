@@ -264,7 +264,7 @@ Examples:
 
 <div class="rc3-extension">
 
-## Extended guidance for the Original Edition
+## Expanded 1.0.0 Guidance
 
 This page preserves the Alpha Edition styling conventions and adds the release
 requirements for the expanded 1.0.0 documentation.

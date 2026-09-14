@@ -3,7 +3,7 @@ Troubleshooting content.
 
 <div class="rc3-extension">
 
-## Extended guidance for the Original Edition
+## Expanded 1.0.0 Guidance
 
 ```{image} /_images/symbol-microscope2.png
 :alt: 3-4-troubleshooting-guide

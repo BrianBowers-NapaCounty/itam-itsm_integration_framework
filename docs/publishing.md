@@ -138,6 +138,12 @@ editions/original/index
 * Supplemental Matter remains the same across editions
 * Contributors should update `authors_supplemental` and `copyright_supplemental` when appropriate
 
+<div class="rc3-extension">
+
+## Expanded 1.0.0 Guidance
+
 The source of truth is the Git repository. Read the Docs builds from `.readthedocs.yaml`. Pull requests should pass the documentation/test workflow before merge. The `latest` Read the Docs version should track the default `main` branch after the reconstructed repository has been verified.
 
 Repository release builds additionally generate self-contained HTML and DOCX copies for optional self-hosting.
+
+</div>

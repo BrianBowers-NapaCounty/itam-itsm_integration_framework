@@ -2,4 +2,10 @@
 
 These materials are ideal for onboarding, validation, and troubleshooting, helping teams move efficiently without having to revisit full-length documentation.
 
+<div class="rc3-extension">
+
+## Expanded 1.0.0 Guidance
+
 See the section index for current documentation.
+
+</div>

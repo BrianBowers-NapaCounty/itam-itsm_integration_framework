@@ -2,4 +2,10 @@
 
 The topics in this section are intended to be completed in sequence and should be reviewed before proceeding to more advanced configuration or integrations.
 
+<div class="rc3-extension">
+
+## Expanded 1.0.0 Guidance
+
 See the section index for current documentation.
+
+</div>

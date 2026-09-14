@@ -3,7 +3,7 @@ Checklist content.
 
 <div class="rc3-extension">
 
-## Extended guidance for the Original Edition
+## Expanded 1.0.0 Guidance
 
 ```{image} /_images/symbol-checkmark2.png
 :alt: 3-1-preimplementation-checklist

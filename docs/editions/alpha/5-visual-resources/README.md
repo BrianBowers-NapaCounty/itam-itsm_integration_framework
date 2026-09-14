@@ -2,4 +2,10 @@
 
 This section is especially useful for presentations, documentation, and stakeholder communication, where visual context can significantly improve comprehension.
 
+<div class="rc3-extension">
+
+## Expanded 1.0.0 Guidance
+
 See the Visual Resources index.
+
+</div>

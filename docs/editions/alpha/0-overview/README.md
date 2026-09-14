@@ -4,4 +4,10 @@ Within this section, the Introduction presents the foundational concepts and goa
 
 The Executive Summary concludes the Overview by synthesizing the problem and proposed approach into a concise narrative suitable for technical leads, project sponsors, and decision-makers. It highlights the value proposition of Capybara and prepares readers for the more detailed, implementation-focused guidance found in subsequent sections.
 
+<div class="rc3-extension">
+
+## Expanded 1.0.0 Guidance
+
 See the section index for current documentation.
+
+</div>

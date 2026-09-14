@@ -16,7 +16,7 @@ Ultimately, the Capybara Framework enables organizations to move beyond static r
 
 <div class="rc3-extension">
 
-## Extended guidance for the Original Edition
+## Expanded 1.0.0 Guidance
 
 ```{image} /_images/symbol-information.png
 :alt: 0-3-executive-summary

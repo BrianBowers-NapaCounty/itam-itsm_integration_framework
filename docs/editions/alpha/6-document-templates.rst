@@ -53,6 +53,13 @@ Satisfaction Survey
        * **License:** MIT  
        * **PPTX:** :download:`health-check.pptx <6-document-templates/health-check.pptx>`
 
+.. raw:: html
+
+   <div class="rc3-extension">
+
+Expanded 1.0.0 Guidance
+-----------------------
+
 The release includes editable planning templates in ``templates/`` at the repository root. They are intentionally generic and should be adapted to local governance and procurement requirements.
 
 * Project charter
@@ -61,3 +68,7 @@ The release includes editable planning templates in ``templates/`` at the reposi
 * Integration field map
 * Acceptance-test plan
 * Operational runbook checklist
+
+.. raw:: html
+
+   </div>

@@ -6,7 +6,7 @@ A spatially enabled ITAM/ITSM solution—integrating ArcGIS Indoors with an exis
 
 <div class="rc3-extension">
 
-## Extended guidance for the Original Edition
+## Expanded 1.0.0 Guidance
 
 ```{image} /_images/symbol-information.png
 :alt: 0-2-problem-statement

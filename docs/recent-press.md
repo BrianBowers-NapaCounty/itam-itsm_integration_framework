@@ -7,4 +7,10 @@ https://www.youtube.com/watch?v=vBkf-U4KmRc</a>
 
 <br>
 
+<div class="rc3-extension">
+
+## Expanded 1.0.0 Guidance
+
 Project maintainers may add verified public references here. Avoid publishing unverified or draft media mentions.
+
+</div>
